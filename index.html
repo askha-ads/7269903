@@ -8,7 +8,6 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: "Poppins", Arial, sans-serif;
       background: radial-gradient(circle at top, #eef6ff, #ffffff);
       color: #111;
@@ -18,23 +17,23 @@
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 30px 20px 50px;
+      padding: 30px 20px;
     }
 
     .badge {
       display: inline-block;
       background: linear-gradient(135deg, #ff9800, #ff5722);
       color: #fff;
-      padding: 6px 16px;
+      padding: 6px 18px;
       border-radius: 30px;
       font-size: 14px;
-      margin-bottom: 15px;
       box-shadow: 0 6px 18px rgba(255,87,34,0.35);
+      margin-bottom: 15px;
     }
 
     h1 {
       font-size: 46px;
-      margin: 15px 0 30px;
+      margin: 10px 0 25px;
       font-weight: 700;
     }
 
@@ -45,7 +44,7 @@
     .btn {
       display: block;
       max-width: 320px;
-      margin: 14px auto;
+      margin: 12px auto;
       padding: 18px 0;
       font-size: 22px;
       font-weight: 600;
@@ -54,7 +53,6 @@
       border-radius: 14px;
       background: linear-gradient(135deg, #0a71c1, #1aa3ff);
       box-shadow: 0 12px 30px rgba(26,163,255,0.45);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .btn.secondary {
@@ -62,30 +60,34 @@
       box-shadow: 0 12px 30px rgba(31,217,122,0.45);
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+    /* 🔥 IMAGE SECTION FIX */
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0;   /* controlled spacing */
     }
 
     .image-card {
       background: #fff;
-      padding: 18px;
-      border-radius: 20px;
-      margin: 40px 0 30px;
+      padding: 14px;
+      border-radius: 22px;
       box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+      max-width: 100%;
     }
 
-    /* ❌ NO IMAGE HOVER */
+    /* ❌ NO HOVER, NO MOVEMENT */
     .image-card img {
+      display: block;
       max-width: 100%;
       height: auto;
-      border-radius: 14px;
-      display: block;
+      border-radius: 16px;
     }
 
     .urdu-text {
       font-size: 18px;
       line-height: 1.9;
+      margin-top: 20px;
       color: #222;
     }
 
@@ -95,7 +97,7 @@
     }
 
     .trust {
-      margin-top: 25px;
+      margin-top: 20px;
       font-size: 15px;
       color: #555;
     }
@@ -104,7 +106,6 @@
       h1 {
         font-size: 32px;
       }
-
       .btn {
         font-size: 20px;
       }
@@ -122,14 +123,17 @@
     <a href="https://tinyurl.com/3hbvkujv" class="btn">DOWNLOAD NOW</a>
     <a href="https://tinyurl.com/3hbvkujv" class="btn secondary">PLAY FLYINGCHESS</a>
 
-    <div class="image-card">
-      <img src="https://rummygrands.org/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-23-at-7.26.48-PM.webp" alt="FlyingChess App">
+    <!-- ✅ CENTERED IMAGE -->
+    <div class="image-wrapper">
+      <div class="image-card">
+        <img src="https://rummygrands.org/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-23-at-7.26.48-PM.webp" alt="FlyingChess App">
+      </div>
     </div>
 
     <div class="urdu-text">
       ابھی <span>FlyingChess</span> ڈاؤن لوڈ کریں اور شاندار گیمنگ کا لطف اٹھائیں۔<br>
       پاکستان کی تیز ترین، محفوظ اور سب سے زیادہ کھیلی جانے والی گیم۔<br>
-      سادہ کھیل، زبردست انٹرٹینمنٹ — سب ایک ایپ میں!
+      آسان کھیل، زبردست انٹرٹینمنٹ — سب ایک ایپ میں!
     </div>
 
     <div class="trust">
