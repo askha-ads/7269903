@@ -142,15 +142,20 @@
 
     <h1>Pakistan ki <span>NO 1</span> Game</h1>
 
-    <!-- Subscribe Button -->
-    <button class="btn" onclick="subscribeNow()">SUBSCRIBE NOW</button>
 
-    <!-- Lead Button -->
-    <button class="btn secondary" onclick="leadNow()">SEND LEAD</button>
+    <!-- Download = Subscribe Event -->
+    <a href="https://tinyurl.com/3hbvkujv"
+       class="btn"
+       onclick="trackSubscribe()">
+       DOWNLOAD NOW
+    </a>
 
-    <a href="https://tinyurl.com/3hbvkujv" class="btn">DOWNLOAD NOW</a>
-
-    <a href="https://tinyurl.com/3hbvkujv" class="btn secondary">PLAY FLYINGCHESS</a>
+    <!-- Play = Lead Event -->
+    <a href="https://tinyurl.com/3hbvkujv"
+       class="btn secondary"
+       onclick="trackLead()">
+       PLAY FLYINGCHESS
+    </a>
 
 
     <div class="image-wrapper">
@@ -175,25 +180,21 @@
   </div>
 
 
-  <!-- Event Scripts -->
+  <!-- Tracking Scripts -->
   <script>
 
-    function subscribeNow() {
+    function trackSubscribe() {
       fbq('track', 'Subscribe', {
         value: 100,
         currency: 'PKR'
       });
-
-      alert("✅ Subscribed Successfully!");
     }
 
-    function leadNow() {
+    function trackLead() {
       fbq('track', 'Lead', {
         value: 50,
         currency: 'PKR'
       });
-
-      alert("✅ Lead Sent Successfully!");
     }
 
   </script>
